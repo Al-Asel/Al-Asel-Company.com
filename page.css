@@ -1,0 +1,1442 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "El Messiri", sans-serif;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: #23475f;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topNav button{
+    display: inline-block;
+    text-align: center;
+    background-color: #23475f;
+    border: 0;
+    
+}
+.btn{
+    text-align: center;
+    padding: 0 29px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 25px; 
+    color: #fff;
+    line-height: 40px;
+    margin-top: 10px;
+    transition-duration: .8s;
+    position: relative;
+    background-color: #23475f;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #00d1b1;
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    right: 0;
+    width: 0;
+    background-color: #00d1b1;
+    bottom: 3px;
+    transition: 0.3s;
+}
+.btn:hover::before{
+    width: 100%;
+}
+.hello{
+    margin-top: 50px;
+    font-size: 35px;
+    animation: square 7s infinite;
+}
+.hellodiv{
+    background-color: #23475f;
+}
+@keyframes square{
+    from{
+        margin-right: 0%;
+        color: #fff;
+    }
+    to{
+        margin-right: 65%;
+        color: #ffffff7b;
+    }
+}
+.divlogo{
+    text-align: center;
+    margin-top: 5%;
+}
+.logo{
+    text-align: center;
+    width: 300px;
+}
+.bio{
+    text-align: center;
+    font-size: 30px;
+    background-color: #77f3e080;
+}
+.line{
+    box-shadow: 0px 0px 3px 2px gray;
+}
+.buy{
+    font-size: 40px;
+    background-color: #77f3e03d;
+    margin-right: 100px;
+    width: 240px;
+}
+.buydivall{
+    margin-right: 300px;
+}
+.b{
+    padding: 90px;
+    display: inline-block;
+    font-size: 30px;
+    text-align: center;
+    transition: 1s;
+}
+.b img{
+    transition: 2s;
+}
+.b img:hover{
+    transform: rotate(360deg);
+}
+.b:hover{
+    text-shadow: 0 0 20px #0bfad6;
+}
+.ser{
+    width: 130px;
+    font-size: 40px;
+    margin-right: 100px;
+    background-color: #77f3e03d;
+}
+.allContainer{
+    display: inline-block;
+    margin-right: 50px;
+}
+.officeCardContainer{
+    gap: 20px;
+    display: inline-block;
+    padding: 20px;
+}
+.officeCard{
+    width: 300px;
+    background-color: #23475f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.officeCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px black;
+}
+.officeImage{
+    width: 300px;
+    height: 200px;
+    background-image: url(office.jpeg);
+    animation: office 20s 1s infinite;
+}
+@keyframes office{
+    20%{background-image: url(office1.jpeg);}
+    40%{background-image: url(office2.jpg);}
+    60%{background-image: url(office3.jpg);}
+    80%{background-image: url(office4.jpg);}
+    100%{background-image: url(office.jpeg);}
+}
+.officeCardConetnt{
+    padding: 20px;
+}
+.officeCardConetnt h3{
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+}
+.officeCardConetnt p{
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+}
+.sleepCardContainer{
+    gap: 20px;
+    display: inline-block;
+    padding: 20px;
+}
+.sleepCard{
+    width: 300px;
+    background-color: #23475f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.sleepCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px black;
+}
+.sleepImage{
+    width: 300px;
+    height: 200px;
+    background-image: url(sleep.jpeg);
+    animation: sleep 20s 1s infinite;
+}
+@keyframes sleep{
+    20%{background-image: url(sleep1.jpeg);}
+    40%{background-image: url(sleep2.jpg);}
+    60%{background-image: url(sleep3.jpeg);}
+    80%{background-image: url(sleep4.jpeg);}
+    100%{background-image: url(sleep.jpeg);}
+}
+.sleepCardConetnt{
+    padding: 20px;
+}
+.sleepCardConetnt h3{
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+}
+.sleepCardConetnt p{
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+}
+.liveCardContainer{
+    gap: 20px;
+    display: inline-block;
+    padding: 20px;
+}
+.liveCard{
+    width: 300px;
+    background-color: #23475f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.liveCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px black;
+}
+.liveImage{
+    width: 300px;
+    height: 200px;
+    background-image: url(live.jpg);
+    animation: live 20s 1s infinite;
+}
+@keyframes live{
+    20%{background-image: url(live1.jpeg);}
+    40%{background-image: url(live2.jpeg);}
+    60%{background-image: url(live3.jpeg);}
+    80%{background-image: url(live4.jpeg);}
+    100%{background-image: url(live.jpg);}
+}
+.liveCardConetnt{
+    padding: 20px;
+}
+.liveCardConetnt h3{
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+}
+.liveCardConetnt p{
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+}
+.carpetsCardContainer{
+    gap: 20px;
+    display: inline-block;
+    padding: 20px;
+}
+.carpetsCard{
+    width: 300px;
+    background-color: #23475f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.carpetsCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px black;
+}
+.carpetsImage{
+    width: 300px;
+    height: 200px;
+    background-image: url(carpets.jpeg);
+    animation: carpets 20s 1s infinite;
+}
+@keyframes carpets{
+    20%{background-image: url(carpets1.jpg);}
+    40%{background-image: url(carpets2.jpeg);}
+    60%{background-image: url(carpets3.jpeg);}
+    80%{background-image: url(carpets4.jpeg);}
+    100%{background-image: url(carpets.jpeg);}
+}
+.carpetsCardConetnt{
+    padding: 20px;
+}
+.carpetsCardConetnt h3{
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+}
+.carpetsCardConetnt p{
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+}
+.divmor{
+    text-align: center;
+}
+.mor{
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #23475f;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition-duration: .3s;
+    padding: 0 40px;
+    font-size: 25px;
+    color: #fff;
+    line-height: 40px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.mor:hover{
+    color: #00d1b1;
+}
+.who{
+    width: 140px;
+    font-size: 40px;
+    margin-right: 100px;
+    background-color: #77f3e03d;
+}
+.whodiv{
+    margin-right: 50px;
+}
+.talk{
+    font-size: 20px;
+    float: right;
+    width: 60%;
+    margin-bottom: 5px;
+    padding: 4px;
+    border: 1px solid gray;
+}
+.posterdiv{
+    width: 39%;
+    float: left;
+}
+.poster{
+    width: 480px;
+    height: 380px;
+}
+.logodiv2{
+    width: 50%;
+    text-align: center;
+}
+.logo2{
+    width: 30%;
+    text-align: center;
+}
+.divmor2{
+    width: 50%;
+    text-align: center;
+}
+.mor2{
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #23475f;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition-duration: .3s;
+    padding: 0 40px;
+    font-size: 25px;
+    color: #fff;
+    line-height: 40px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.mor2:hover{
+    color: #00d1b1;
+}
+.call{
+    width: 200px;
+    font-size: 40px;
+    margin-right: 100px;
+    background-color: #77f3e03d;
+}
+.email{
+    margin-top: 10px;
+}
+.con{
+    font-size: 29px;
+    margin-bottom: 5px;
+    padding: 4px;
+    border: 1px solid gray;
+    width: 90%;
+    background-color: #77f3e03d;
+}
+.input input{
+    width: 45%;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-top: 15px;
+    margin-right: 12px;
+    padding: 5px;
+    /*background-color: rgba(192, 192, 192, 0.337);*/
+    background-color: white;
+    font-size: 25px;
+}
+.text-area textarea{
+    width: 92%;
+    border: 1px solid black;
+    margin-top: 15px;
+    margin-right: 12px;
+    padding: 5px;
+    /*background-color: rgba(192, 192, 192, 0.337);*/
+    background-color: white;
+    font-size: 30px;
+}
+.sub{
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #23475f;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition-duration: .3s;
+    padding: 0 40px;
+    font-size: 30px;
+    color: #fff;
+    line-height: 40px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.sub:hover{
+    color: #00d1b1;
+}
+.menu{
+    background-color: #eee;
+    padding: 5px 5px;
+    right: 0;
+    top: 50%;
+    transform: translatey(-50%);
+    border-radius: 8px 0 0 8px;
+    box-shadow: -5px 0px 0px 0px #23475f;
+    transition: all 300ms ease;
+    list-style: none;
+    position: fixed;
+}
+.menu:hover{
+    box-shadow: -2px 0px 15px 2px #23475f;
+    padding-right: 30px;
+}
+.menu li{
+    margin: 8px 0px;
+}
+.icon a{
+    color: #111;
+    font-size: 25px;
+    transition: all 200ms ease;
+}
+.icon a:hover{
+    color: #23475f;
+    font-size: 34px;
+
+}
+.map{
+    width: 100%;
+}
+.address{
+    width: 70%;
+    text-align: center;
+    font-size: 20px;
+    background-color: #23475f;
+    color: #fff;
+    width: 100%;
+    cursor: no-drop;
+}
+/**************************************صفحة خدماتنا*************************************/
+.allContainerserv{
+    display: inline-block;
+    margin-right: 0px;
+}
+.kitchenCardContainer{
+    gap: 20px;
+    display: inline-block;
+    padding: 20px;
+}
+.kitchenCard{
+    width: 300px;
+    background-color: #23475f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.kitchenCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px black;
+}
+.kitchenImage{
+    width: 300px;
+    height: 200px;
+    background-image: url(kitchen.jpg);
+    animation: kitchen 20s 1s infinite;
+}
+@keyframes kitchen{
+    20%{background-image: url(kitchen1.jpeg);}
+    40%{background-image: url(kitchen2.jpg);}
+    60%{background-image: url(kitchen3.jpeg);}
+    80%{background-image: url(kitchen4.jpeg);}
+    100%{background-image: url(kitchen.jpg);}
+}
+.kitchenCardConetnt{
+    padding: 20px;
+}
+.kitchenCardConetnt h3{
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+}
+.kitchenCardConetnt p{
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+}
+.bedCardContainer{
+    gap: 20px;
+    display: inline-block;
+    padding: 20px;
+}
+.bedCard{
+    width: 300px;
+    background-color: #23475f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.bedCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px black;
+}
+.bedImage{
+    width: 300px;
+    height: 200px;
+    background-image: url(bed.jpeg);
+    animation: bed 20s 1s infinite;
+}
+@keyframes bed{
+    20%{background-image: url(bed1.jpg);}
+    40%{background-image: url(bed2.jpeg);}
+    60%{background-image: url(bed3.jpg);}
+    80%{background-image: url(bed4.jpg);}
+    100%{background-image: url(bed.jpeg);}
+}
+.bedCardConetnt{
+    padding: 20px;
+}
+.bedCardConetnt h3{
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+}
+.bedCardConetnt p{
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+}
+.coffeeCardContainer{
+    gap: 20px;
+    display: inline-block;
+    padding: 20px;
+}
+.coffeeCard{
+    width: 300px;
+    background-color: #23475f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.coffeeCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px black;
+}
+.coffeeImage{
+    width: 300px;
+    height: 200px;
+    background-image: url(coffee.jpeg);
+    animation: coffee 20s 1s infinite;
+}
+@keyframes coffee{
+    20%{background-image: url(coffee1.jpg);}
+    40%{background-image: url(coffee2.jpg);}
+    60%{background-image: url(coffee3.jpg);}
+    80%{background-image: url(coffee4.jpg);}
+    100%{background-image: url(coffee.jpeg);}
+}
+.coffeeCardConetnt{
+    padding: 20px;
+}
+.coffeeCardConetnt h3{
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+}
+.coffeeCardConetnt p{
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+}
+.tvCardContainer{
+    gap: 20px;
+    display: inline-block;
+    padding: 20px;
+}
+.tvCard{
+    width: 300px;
+    background-color: #23475f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.tvCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px black;
+}
+.tvImage{
+    width: 300px;
+    height: 200px;
+    background-image: url(tv.jpeg);
+    animation: tv 20s 1s infinite;
+}
+@keyframes tv{
+    20%{background-image: url(tv1.jpg);}
+    40%{background-image: url(tv2.jpeg);}
+    60%{background-image: url(tv3.jpg);}
+    80%{background-image: url(tv4.jpg);}
+    100%{background-image: url(tv.jpeg);}
+}
+.tvCardConetnt{
+    padding: 20px;
+}
+.tvCardConetnt h3{
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+}
+.tvCardConetnt p{
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+}
+.frgCardContainer{
+    gap: 20px;
+    display: inline-block;
+    padding: 20px;
+}
+.frgCard{
+    width: 300px;
+    background-color: #23475f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.frgCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px black;
+}
+.frgImage{
+    width: 300px;
+    height: 200px;
+    background-image: url(frg.jpeg);
+    animation: frg 20s 1s infinite;
+}
+@keyframes frg{
+    20%{background-image: url(frg1.jpg);}
+    40%{background-image: url(frg2.jpeg);}
+    60%{background-image: url(frg3.jpeg);}
+    80%{background-image: url(frg4.jpeg);}
+    100%{background-image: url(frg.jpeg);}
+}
+.frgCardConetnt{
+    padding: 20px;
+}
+.frgCardConetnt h3{
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+}
+.frgCardConetnt p{
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+}
+.arCardContainer{
+    gap: 20px;
+    display: inline-block;
+    padding: 20px;
+}
+.arCard{
+    width: 300px;
+    background-color: #23475f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.arCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px black;
+}
+.arImage{
+    width: 300px;
+    height: 200px;
+    background-image: url(ar.jpeg);
+    animation: ar 20s 1s infinite;
+}
+@keyframes ar{
+    20%{background-image: url(ar1.jpg);}
+    40%{background-image: url(ar2.png);}
+    60%{background-image: url(ar3.jpg);}
+    80%{background-image: url(ar4.jpg);}
+    100%{background-image: url(ar.jpeg);}
+}
+.arCardConetnt{
+    padding: 20px;
+}
+.arCardConetnt h3{
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+}
+.arCardConetnt p{
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+}
+.restoCardContainer{
+    gap: 20px;
+    display: inline-block;
+    padding: 20px;
+}
+.restoCard{
+    width: 300px;
+    background-color: #23475f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.restoCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px black;
+}
+.restoImage{
+    width: 300px;
+    height: 200px;
+    background-image: url(resto.jpeg);
+    animation: resto 20s 1s infinite;
+}
+@keyframes resto{
+    20%{background-image: url(resto1.jpg);}
+    40%{background-image: url(resto2.jpg);}
+    60%{background-image: url(resto3.jpg);}
+    80%{background-image: url(resto4.jpg);}
+    100%{background-image: url(resto.jpeg);}
+}
+.restoCardConetnt{
+    padding: 20px;
+}
+.restoCardConetnt h3{
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+}
+.restoCardConetnt p{
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+}
+.hotelCardContainer{
+    gap: 20px;
+    display: inline-block;
+    padding: 20px;
+}
+.hotelCard{
+    width: 300px;
+    background-color: #23475f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.hotelCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px black;
+}
+.hotelImage{
+    width: 300px;
+    height: 200px;
+    background-image: url(hotel.jpeg);
+    animation: hotel 20s 1s infinite;
+}
+@keyframes hotel{
+    20%{background-image: url(hotel1.jpg);}
+    40%{background-image: url(hotel2.png);}
+    60%{background-image: url(hotel3.jpeg);}
+    80%{background-image: url(hotel4.jpg);}
+    100%{background-image: url(hotel.jpeg);}
+}
+.hotelCardConetnt{
+    padding: 20px;
+}
+.hotelCardConetnt h3{
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+}
+.hotelCardConetnt p{
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+}
+/************************************************صفحة تواصل معنا***************************************************/
+.social{
+    display: block;
+    margin-right: 50px;
+}
+.social a{
+    display: block;
+    margin-bottom: 30px;
+    text-decoration: none;
+    padding: 2px;
+    font-size: 40px;
+    color: black;
+    border: 2px solid #23475f;
+    width: 60%;
+    animation: colo 1s;
+    border-radius: 200px;
+}
+@keyframes colo{
+    from{background-color: #0bfad6;}
+    to{background-color: #23475f;}
+}
+.social a:hover{
+    animation-iteration-count: infinite;
+}
+/******************************************صفحة من نحن*************************************************/
+.wediv{
+    margin-right: 40px;
+}
+.we{
+    font-size: 30px;
+}
+.descrip{
+    margin-right: 20px;
+}
+.titl{
+    color: #23475f;
+}
+.whyus{
+    width: 200px;
+    font-size: 40px;
+    margin-right: 60px;
+    background-color: #77f3e03d;
+}
+.allContainerwho{
+    display: inline-block;
+    margin-right: 20px;
+    padding: 2%;
+}
+.expCardContainer{
+    display: inline-block;
+    box-shadow: 0 0 30px black;
+    background-color: rgba(222, 205, 205, 0.368);
+    padding: 25px;
+}
+.expCard{
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+}
+.expImage{
+    width: 268px;
+    height: 200px;
+    background-image: url(exp.png);
+    text-align: center;
+}
+.expCardConetnt{
+    padding: 20px;
+}
+.expCardConetnt h3{
+    margin: 10px 0;
+    color: black;
+    text-align: center;
+}
+.expCardConetnt p{
+    color: black;
+    line-height: 1.5;
+    text-align: center;
+}
+.menCardContainer{
+    display: inline-block;
+    box-shadow: 0 0 30px black;
+    background-color: rgba(222, 205, 205, 0.368);
+    padding: 25px;
+}
+.menCard{
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+}
+.menImage{
+    width: 268px;
+    height: 200px;
+    background-image: url(men.png);
+    text-align: center;
+}
+.menCardConetnt{
+    padding: 20px;
+}
+.menCardConetnt h3{
+    margin: 10px 0;
+    color: black;
+    text-align: center;
+}
+.menCardConetnt p{
+    color: black;
+    line-height: 1.5;
+    text-align: center;
+}
+.priceCardContainer{
+    display: inline-block;
+    box-shadow: 0 0 30px black;
+    background-color: rgba(222, 205, 205, 0.368);
+    padding: 25px;
+}
+.priceCard{
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+}
+.priceImage{
+    width: 265px;
+    height: 200px;
+    background-image: url(price.png);
+    text-align: center;
+}
+.priceCardConetnt{
+    padding: 20px;
+}
+.priceCardConetnt h3{
+    margin: 10px 0;
+    color: black;
+    text-align: center;
+}
+.priceCardConetnt p{
+    color: black;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 770px){
+    .btn{
+        font-size: 13px; 
+        margin-left: 0px;
+        padding: 0 9px;
+    }
+    .hello{
+        font-size: 25px;
+    }
+    @keyframes square{
+        from{
+            margin-right: 0%;
+            color: #fff;
+        }
+        to{
+            margin-right: 20%;
+            color: #ffffff7b;
+        }
+    }
+    .divlogo{
+        text-align: center;
+        margin-top: 10%;
+    }
+    .logo{
+        text-align: center;
+        width: 200px;
+    }
+    .line{
+        box-shadow: 0px 0px 3px 2px gray;
+    }
+    .bio{
+        font-size: 12px;
+    }
+    .buy{
+        margin-right: 30px;
+        font-size: 30px;
+        width: 180px;  
+    }
+    .buydivall{
+        margin-right: 0;
+    }
+    .b{
+        display: block;
+        margin-left: 0;
+        text-align: center;
+        font-size: 25px;
+        padding: 30px;
+    }
+    .allContainer{
+        display: block;
+        text-align: center;
+        margin-right: 0;
+    }
+    .carpetsCardContainer{
+        display: block;
+        text-align: center;
+    }
+    .carpetsCard{
+        width: 300px;
+        text-align: center;
+        display: block;
+        box-shadow: 0px 2px 10px black;
+    }
+    .carpetsImage{
+        width: 300px;
+        height: 200px;
+        text-align: center;
+    }
+    .sleepCardContainer{
+        display: block;
+        text-align: center;
+    }
+    .sleepCard{
+        width: 300px;
+        text-align: center;
+        display: block;
+        box-shadow: 0px 2px 10px black;
+    }
+    .sleepImage{
+        width: 300px;
+        height: 200px;
+        text-align: center;
+    }
+    .liveCardContainer{
+        display: block;
+        text-align: center;
+    }
+    .liveCard{
+        width: 300px;
+        text-align: center;
+        display: block;
+        box-shadow: 0px 2px 10px black;
+    }
+    .liveImage{
+        width: 300px;
+        height: 200px;
+        text-align: center;
+    }
+    .officeCardContainer{
+        display: block;
+        text-align: center;
+    }
+    .officeCard{
+        width: 300px;
+        text-align: center;
+        display: block;
+        box-shadow: 0px 2px 10px black;
+    }
+    .officeImage{
+        width: 300px;
+        height: 200px;
+        text-align: center;
+    }
+    .divmor{
+        text-align: center;
+        width: 90%;
+    }
+    .mor{
+        
+        text-align: center;
+        padding: 0 35px;
+        font-size: 23px;
+        cursor: pointer;
+        color: white;
+        background-color: #23475f;
+    }
+    .divmor2{
+        text-align: center;
+        width: 80%;
+    }
+    .mor2{
+        width: 100px;
+        text-align: center;
+        padding: 0 35px;
+        font-size: 23px;
+        cursor: pointer;
+        color: white;
+        background-color: #23475f;
+    }
+    .talk{
+        font-size: 25px;
+        width: 85%;
+    }
+    .logo2{
+        width: 150%;
+    }
+    .poster{
+        display: none;
+    }
+    .con{
+        font-size: 18px;
+        width: 100%;
+    }
+    .input input{
+        width: 45%;
+        border: 1px solid black;
+        padding: 1px;
+        /*background-color: rgba(192, 192, 192, 0.337);*/
+        font-size: 20px;
+    }
+    .text-area textarea{
+        width: 92%;
+        padding: 1px;
+        /*background-color: rgba(192, 192, 192, 0.337);*/
+        font-size: 20px;
+    }
+    .sub{
+        width: 40%;
+        font-size: 25px;
+        text-align: center;
+        padding: 0 3px;
+    }
+    .email form{
+        text-align: center;
+    }
+    .address{
+        font-size: 15px;
+    }
+    /****************************صفحة خدماتنا************************************************/
+    .allContainerserv{
+        display: block;
+        text-align: center;
+        margin-right: 0;
+    }
+    .kitchenCardContainer{
+        display: block;
+        text-align: center;
+    }
+    .kitchenCard{
+        width: 300px;
+        text-align: center;
+        display: block;
+        box-shadow: 0px 2px 10px black;
+    }
+    .kitchenImage{
+        width: 300px;
+        height: 200px;
+        text-align: center;
+    }
+    .bedCardContainer{
+        display: block;
+        text-align: center;
+    }
+    .bedCard{
+        width: 300px;
+        text-align: center;
+        display: block;
+        box-shadow: 0px 2px 10px black;
+    }
+    .bedImage{
+        width: 300px;
+        height: 200px;
+        text-align: center;
+    }
+    .coffeeCardContainer{
+        display: block;
+        text-align: center;
+    }
+    .coffeeCard{
+        width: 300px;
+        text-align: center;
+        display: block;
+        box-shadow: 0px 2px 10px black;
+    }
+    .coffeeImage{
+        width: 300px;
+        height: 200px;
+        text-align: center;
+    }
+    .tvCardContainer{
+        display: block;
+        text-align: center;
+    }
+    .tvCard{
+        width: 300px;
+        text-align: center;
+        display: block;
+        box-shadow: 0px 2px 10px black;
+    }
+    .tvImage{
+        width: 300px;
+        height: 200px;
+        text-align: center;
+    }
+    .frgCardContainer{
+        display: block;
+        text-align: center;
+    }
+    .frgCard{
+        width: 300px;
+        text-align: center;
+        display: block;
+        box-shadow: 0px 2px 10px black;
+    }
+    .frgImage{
+        width: 300px;
+        height: 200px;
+        text-align: center;
+    }
+    .arCardContainer{
+        display: block;
+        text-align: center;
+    }
+    .arCard{
+        width: 300px;
+        text-align: center;
+        display: block;
+        box-shadow: 0px 2px 10px black;
+    }
+    .arImage{
+        width: 300px;
+        height: 200px;
+        text-align: center;
+    }
+    .restoCardContainer{
+        display: block;
+        text-align: center;
+    }
+    .restoCard{
+        width: 300px;
+        text-align: center;
+        display: block;
+        box-shadow: 0px 2px 10px black;
+    }
+    .restoImage{
+        width: 300px;
+        height: 200px;
+        text-align: center;
+    }
+    .hotelCardContainer{
+        display: block;
+        text-align: center;
+    }
+    .hotelCard{
+        width: 300px;
+        text-align: center;
+        display: block;
+        box-shadow: 0px 2px 10px black;
+    }
+    .hotelImage{
+        width: 300px;
+        height: 200px;
+        text-align: center;
+    }
+    /**********************************صفحة تواصل معنا*************************************/
+    .social{
+        margin-right: 0;
+    }
+    .social a{
+        margin-bottom: 20px;
+        padding: 1px;
+        font-size: 20px;
+        color: black;
+        border: 1px solid #23475f;
+        width: 100%;
+        animation: colo 1s;
+    }
+    .social img{
+        width: 7%;
+    }
+    /****************************صفحة من نحن************************************************/
+    .whologo{
+        width: 60%;
+        text-align: center;
+    }
+    .wediv{
+        margin-right: 0;
+    }
+    .we{
+        font-size: 20px;
+    }
+    .descrip{
+        margin-right: 15px;
+    }
+    .allContainerwho{
+        display: block;
+        margin-right: 0px;
+        padding: 5%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 700px){
+    .allContainer{
+        margin-right: 20px;
+        text-align: center;
+    }
+    /******************************************صفحة خدماتنا*********************************************/
+    .allContainerserv{
+        margin-right: 20px;
+        text-align: center;
+    }
+    /**********************************صفحة تواصل معنا*************************************/
+    .social{
+        margin-right: 20px;
+    }
+    .social a{
+        margin-bottom: 20px;
+        padding: 1px;
+        font-size: 20px;
+        color: black;
+        border: 1px solid #23475f;
+        width: 90%;
+        animation: colo 1s;
+    }
+    .social img{
+        width: 7%;
+    }
+    /****************************صفحة من نحن************************************************/
+    .allContainerwho{
+        display: block;
+        margin-right: 0px;
+        padding: 2%;
+        text-align: center;
+    }
+    .expCardContainer{
+        padding: 0px;
+    }
+    .menCardContainer{
+        padding: 0px;
+    }
+    .priceCardContainer{
+        padding: 0px;
+    }
+    
+}
+
+@media screen and (min-width: 710px) and (max-width: 780px){
+    .allContainer{
+        display: inline-block;
+    }
+    .sleepCardContainer{
+        display: inline-block;
+    }
+    .officeCardContainer{
+        display: inline-block;
+    }
+    .liveCardContainer{
+        display: inline-block;
+    }
+    .carpetsCardContainer{
+        display: inline-block;
+    }
+    /**************************صفحة خدماتنا************************************************/
+    .allContainerserv{
+        display: inline-block;
+    }
+    .kitchenCardContainer{
+        display: inline-block;
+    }
+    .bedCardContainer{
+        display: inline-block;
+    }
+    .coffeeCardContainer{
+        display: inline-block;
+    }
+    .tvCardContainer{
+        display: inline-block;
+    }
+    .frgCardContainer{
+        display: inline-block;
+    }
+    .arCardContainer{
+        display: inline-block;
+    }
+    .restoCardContainer{
+        display: inline-block;
+    }
+    .hotelCardContainer{
+        display: inline-block;
+    }
+    /**********************************صفحة تواصل معنا*************************************/
+    .social{
+        margin-right: 20px;
+    }
+    .social a{
+        margin-bottom: 20px;
+        padding: 1px;
+        font-size: 30px;
+        color: black;
+        border: 1px solid #23475f;
+        width: 60%;
+        animation: colo 1s;
+    }
+    .social img{
+        width: 7%;
+    }
+    
+}
+
+@media screen and (max-width: 1100px){
+    .buydivall{
+        margin-right: 0;
+    }
+    .poster{
+        width: 300px;
+        height: 300px;
+    }
+    
+}
+
+@media screen and (min-width: 850px) and (max-width: 950px){
+    .hello{
+        font-size: 30px;
+    }
+    @keyframes square{
+        from{
+            margin-right: 0%;
+            color: #fff;
+        }
+        to{
+            margin-right: 60%;
+            color: #ffffff7b;
+        }
+    }
+    /**********************************صفحة تواصل معنا*************************************/
+    .social{
+        margin-right: 20px;
+    }
+    .social a{
+        margin-bottom: 20px;
+        padding: 1px;
+        font-size: 40px;
+        color: black;
+        border: 1px solid #23475f;
+        width: 70%;
+        animation: colo 1s;
+    }
+    .social img{
+        width: 7%;
+    }
+    /**********************************صفحة من نحن*************************************/
+    .allContainerwho{
+        display: block;
+        margin-right: 0px;
+        padding: 2%;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1150px){
+    /***********************صفحة من نحن*******************************/
+    .allContainerwho{
+        display: block;
+        margin-right: 0px;
+        padding: 2%;
+        text-align: center;
+    }
+}
