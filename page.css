@@ -1,0 +1,1285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "El Messiri", sans-serif;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: #23475f;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topNav button{
+    display: inline-block;
+    text-align: center;
+    background-color: #23475f;
+    border: 0;
+}
+.btn{
+    text-align: center;
+    padding: 0 29px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 21px; 
+    color: #fff;
+    line-height: 40px;
+    margin-top: 10px;
+    transition-duration: .8s;
+    position: relative;
+    background-color: #23475f;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #00d1b1;
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    right: 0;
+    width: 0;
+    background-color: #00d1b1;
+    bottom: 3px;
+    transition: 0.3s;
+}
+.btn:hover::before{
+    width: 100%;
+}
+.hello{
+    margin-top: 50px;
+    font-size: 30px;
+    animation: square 7s infinite;
+}
+.hellodiv{
+    background-color: #23475f;
+}
+@keyframes square{
+    from{
+        margin-right: 0%;
+        color: #fff;
+    }
+    to{
+        margin-right: 65%;
+        color: #ffffff7b;
+    }
+}
+.amn{
+    background-color: #23475f;
+}
+.divlogo{
+    text-align: center;
+}
+.logo{
+    text-align: center;
+    width: 40%;
+}
+.bio{
+    text-align: center;
+    font-size: 30px;
+    background-color: #77f3e080;
+}
+.line{
+    box-shadow: 0px 0px 3px 2px gray;
+}
+/*.buy{
+    font-size: 40px;
+    background-color: #77f3e03d;
+    margin-right: 100px;
+    width: 240px;
+}*/
+.buydiv{
+    text-align: center;
+}
+.b{
+    margin: 80px;
+    display: inline-block;
+    font-size: 27px;
+    text-align: center;
+    transition: 1s;
+}
+.b img{
+    transition: 2s;
+    width: 53px;
+}
+.b img:hover{
+    transform: rotate(360deg);
+}
+.b:hover{
+    text-shadow: 0 0 20px #0bfad6;
+}
+.ser{
+    font-size: 35px;
+    margin-right: 70px;
+}
+.cons{
+    text-align: center;
+}
+.officeCardContainer{
+    display: inline-block;
+    padding: 20px;
+}
+.officeCard{
+    width: 300px;
+    background-color: #23475f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.officeCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px black;
+}
+.officeImage{
+    width: 300px;
+    height: 200px;
+    background-image: url(office.jpeg);
+    animation: office 20s 1s infinite;
+}
+@keyframes office{
+    20%{background-image: url(office1.jpeg);}
+    40%{background-image: url(office2.jpg);}
+    60%{background-image: url(office3.jpg);}
+    80%{background-image: url(office4.jpg);}
+    100%{background-image: url(office.jpeg);}
+}
+.officeCardConetnt{
+    padding: 20px;
+}
+.officeCardConetnt h3{
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+.officeCardConetnt p{
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 12px;
+}
+.sleepCardContainer{
+    display: inline-block;
+    padding: 20px;
+}
+.sleepCard{
+    width: 300px;
+    background-color: #23475f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.sleepCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px black;
+}
+.sleepImage{
+    width: 300px;
+    height: 200px;
+    background-image: url(sleep.jpeg);
+    animation: sleep 20s 1s infinite;
+}
+@keyframes sleep{
+    20%{background-image: url(sleep1.jpeg);}
+    40%{background-image: url(sleep2.jpg);}
+    60%{background-image: url(sleep3.jpeg);}
+    80%{background-image: url(sleep4.jpeg);}
+    100%{background-image: url(sleep.jpeg);}
+}
+.sleepCardConetnt{
+    padding: 20px;
+}
+.sleepCardConetnt h3{
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+.sleepCardConetnt p{
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 12px;
+}
+.liveCardContainer{
+    display: inline-block;
+    padding: 20px;
+}
+.liveCard{
+    width: 300px;
+    background-color: #23475f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.liveCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px black;
+}
+.liveImage{
+    width: 300px;
+    height: 200px;
+    background-image: url(live.jpg);
+    animation: live 20s 1s infinite;
+}
+@keyframes live{
+    20%{background-image: url(live1.jpeg);}
+    40%{background-image: url(live2.jpeg);}
+    60%{background-image: url(live3.jpeg);}
+    80%{background-image: url(live4.jpeg);}
+    100%{background-image: url(live.jpg);}
+}
+.liveCardConetnt{
+    padding: 20px;
+}
+.liveCardConetnt h3{
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+.liveCardConetnt p{
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 12px;
+}
+.carpetsCardContainer{
+    display: inline-block;
+    padding: 20px;
+}
+.carpetsCard{
+    width: 300px;
+    background-color: #23475f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.carpetsCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px black;
+}
+.carpetsImage{
+    width: 300px;
+    height: 200px;
+    background-image: url(carpets.jpeg);
+    animation: carpets 20s 1s infinite;
+}
+@keyframes carpets{
+    20%{background-image: url(carpets1.jpg);}
+    40%{background-image: url(carpets2.jpeg);}
+    60%{background-image: url(carpets3.jpeg);}
+    80%{background-image: url(carpets4.jpeg);}
+    100%{background-image: url(carpets.jpeg);}
+}
+.carpetsCardConetnt{
+    padding: 20px;
+}
+.carpetsCardConetnt h3{
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+.carpetsCardConetnt p{
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 12px;
+}
+.mor{
+    text-align: center;
+    cursor: pointer;
+    background-color: #23475f;
+    transition-duration: .3s;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 20px;
+    padding: 0 50px;
+    line-height: 30px;
+}
+.mor:hover{
+    color: #00d1b1;
+}
+/*.who{
+    width: 130px;
+    font-size: 35px;
+    margin-right: 70px;
+}
+.whodiv{
+    margin-right: 50px;
+}
+.talk{
+    font-size: 20px;
+    float: right;
+    width: 60%;
+    margin-bottom: 5px;
+    padding: 4px;
+    border: 1px solid gray;
+}
+.posterdiv{
+    width: 39%;
+    float: left;
+}
+.poster{
+    width: 480px;
+    height: 380px;
+}
+.logodiv2{
+    width: 50%;
+    text-align: center;
+}
+.logo2{
+    width: 30%;
+    text-align: center;
+}
+.divmor2{
+    width: 50%;
+    text-align: center;
+}
+.mor2{
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #23475f;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition-duration: .3s;
+    padding: 0 40px;
+    font-size: 25px;
+    color: #fff;
+    line-height: 40px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.mor2:hover{
+    color: #00d1b1;
+}*/
+.call{
+    font-size: 35px;
+    margin-right: 70px;
+}
+.con{
+    font-size: 20px;
+    margin-bottom: 5px;
+    padding: 4px;
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 10px;
+}
+.email{
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+form{
+    background-color: #23475f;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.input input{
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-top: 15px;
+    padding: 5px;
+    background-color: #d6e6f2;
+    font-size: 20px;
+    text-align: center;
+}
+.text-area textarea{
+    width: 81%;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
+    background-color: #d6e6f2;
+    font-size: 25px;
+    text-align: center;
+}
+.sub{
+    text-align: center;
+    cursor: pointer;
+    background-color: #23475f;
+    transition-duration: .3s;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 20px;
+    padding: 0 50px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.sub:hover{
+    color: #00d1b1;
+}
+.menu{
+    background-color: #eee;
+    padding: 5px 5px;
+    right: 0;
+    top: 50%;
+    transform: translatey(-50%);
+    border-radius: 8px 0 0 8px;
+    box-shadow: -5px 0px 0px 0px #23475f;
+    transition: all 300ms ease;
+    list-style: none;
+    position: fixed;
+}
+.menu:hover{
+    box-shadow: -2px 0px 15px 2px #23475f;
+    padding-right: 30px;
+}
+.menu li{
+    margin: 8px 0px;
+}
+.icon a{
+    color: #111;
+    font-size: 25px;
+    transition: all 200ms ease;
+}
+.icon a:hover{
+    color: #23475f;
+    font-size: 34px;
+
+}
+.map{
+    width: 100%;
+}
+.address{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    background-color: #23475f;
+    color: #fff;
+    cursor: no-drop;
+}
+/**************************************صفحة خدماتنا*************************************/
+.kitchenCardContainer{
+    display: inline-block;
+    padding: 20px;
+}
+.kitchenCard{
+    width: 300px;
+    background-color: #23475f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.kitchenCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px black;
+}
+.kitchenImage{
+    width: 300px;
+    height: 200px;
+    background-image: url(kitchen.jpg);
+    animation: kitchen 20s 1s infinite;
+}
+@keyframes kitchen{
+    20%{background-image: url(kitchen1.jpeg);}
+    40%{background-image: url(kitchen2.jpg);}
+    60%{background-image: url(kitchen3.jpeg);}
+    80%{background-image: url(kitchen4.jpeg);}
+    100%{background-image: url(kitchen.jpg);}
+}
+.kitchenCardConetnt{
+    padding: 20px;
+}
+.kitchenCardConetnt h3{
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+.kitchenCardConetnt p{
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 12px;
+}
+.bedCardContainer{
+    display: inline-block;
+    padding: 20px;
+}
+.bedCard{
+    width: 300px;
+    background-color: #23475f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.bedCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px black;
+}
+.bedImage{
+    width: 300px;
+    height: 200px;
+    background-image: url(bed.jpeg);
+    animation: bed 20s 1s infinite;
+}
+@keyframes bed{
+    20%{background-image: url(bed1.jpg);}
+    40%{background-image: url(bed2.jpeg);}
+    60%{background-image: url(bed3.jpg);}
+    80%{background-image: url(bed4.jpg);}
+    100%{background-image: url(bed.jpeg);}
+}
+.bedCardConetnt{
+    padding: 20px;
+}
+.bedCardConetnt h3{
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+.bedCardConetnt p{
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 12px;
+}
+.coffeeCardContainer{
+    display: inline-block;
+    padding: 20px;
+}
+.coffeeCard{
+    width: 300px;
+    background-color: #23475f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.coffeeCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px black;
+}
+.coffeeImage{
+    width: 300px;
+    height: 200px;
+    background-image: url(coffee.jpeg);
+    animation: coffee 20s 1s infinite;
+}
+@keyframes coffee{
+    20%{background-image: url(coffee1.jpg);}
+    40%{background-image: url(coffee2.jpg);}
+    60%{background-image: url(coffee3.jpg);}
+    80%{background-image: url(coffee4.jpg);}
+    100%{background-image: url(coffee.jpeg);}
+}
+.coffeeCardConetnt{
+    padding: 20px;
+}
+.coffeeCardConetnt h3{
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+.coffeeCardConetnt p{
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 12px;
+}
+.tvCardContainer{
+    display: inline-block;
+    padding: 20px;
+}
+.tvCard{
+    width: 300px;
+    background-color: #23475f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.tvCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px black;
+}
+.tvImage{
+    width: 300px;
+    height: 200px;
+    background-image: url(tv.jpeg);
+    animation: tv 20s 1s infinite;
+}
+@keyframes tv{
+    20%{background-image: url(tv1.jpg);}
+    40%{background-image: url(tv2.jpeg);}
+    60%{background-image: url(tv3.jpg);}
+    80%{background-image: url(tv4.jpg);}
+    100%{background-image: url(tv.jpeg);}
+}
+.tvCardConetnt{
+    padding: 20px;
+}
+.tvCardConetnt h3{
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+.tvCardConetnt p{
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 12px;
+}
+.frgCardContainer{
+    display: inline-block;
+    padding: 20px;
+}
+.frgCard{
+    width: 300px;
+    background-color: #23475f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.frgCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px black;
+}
+.frgImage{
+    width: 300px;
+    height: 200px;
+    background-image: url(frg.jpeg);
+    animation: frg 20s 1s infinite;
+}
+@keyframes frg{
+    20%{background-image: url(frg1.jpg);}
+    40%{background-image: url(frg2.jpeg);}
+    60%{background-image: url(frg3.jpeg);}
+    80%{background-image: url(frg4.jpeg);}
+    100%{background-image: url(frg.jpeg);}
+}
+.frgCardConetnt{
+    padding: 20px;
+}
+.frgCardConetnt h3{
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+.frgCardConetnt p{
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 12px;
+}
+.arCardContainer{
+    display: inline-block;
+    padding: 20px;
+}
+.arCard{
+    width: 300px;
+    background-color: #23475f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.arCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px black;
+}
+.arImage{
+    width: 300px;
+    height: 200px;
+    background-image: url(ar.jpeg);
+    animation: ar 20s 1s infinite;
+}
+@keyframes ar{
+    20%{background-image: url(ar1.jpg);}
+    40%{background-image: url(ar2.png);}
+    60%{background-image: url(ar3.jpg);}
+    80%{background-image: url(ar4.jpg);}
+    100%{background-image: url(ar.jpeg);}
+}
+.arCardConetnt{
+    padding: 20px;
+}
+.arCardConetnt h3{
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+.arCardConetnt p{
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 12px;
+}
+.restoCardContainer{
+    display: inline-block;
+    padding: 20px;
+}
+.restoCard{
+    width: 300px;
+    background-color: #23475f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.restoCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px black;
+}
+.restoImage{
+    width: 300px;
+    height: 200px;
+    background-image: url(resto.jpeg);
+    animation: resto 20s 1s infinite;
+}
+@keyframes resto{
+    20%{background-image: url(resto1.jpg);}
+    40%{background-image: url(resto2.jpg);}
+    60%{background-image: url(resto3.jpg);}
+    80%{background-image: url(resto4.jpg);}
+    100%{background-image: url(resto.jpeg);}
+}
+.restoCardConetnt{
+    padding: 20px;
+}
+.restoCardConetnt h3{
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+.restoCardConetnt p{
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 12px;
+}
+.hotelCardContainer{
+    display: inline-block;
+    padding: 20px;
+}
+.hotelCard{
+    width: 300px;
+    background-color: #23475f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.hotelCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px black;
+}
+.hotelImage{
+    width: 300px;
+    height: 200px;
+    background-image: url(hotel.jpeg);
+    animation: hotel 20s 1s infinite;
+}
+@keyframes hotel{
+    20%{background-image: url(hotel1.jpg);}
+    40%{background-image: url(hotel2.png);}
+    60%{background-image: url(hotel3.jpeg);}
+    80%{background-image: url(hotel4.jpg);}
+    100%{background-image: url(hotel.jpeg);}
+}
+.hotelCardConetnt{
+    padding: 20px;
+}
+.hotelCardConetnt h3{
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+.hotelCardConetnt p{
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 12px;
+}
+/************************************************صفحة تواصل معنا***************************************************/
+.social{
+    text-align: center;
+}
+.social a{
+    margin: 20px;
+    text-decoration: none;
+    padding: 2px;
+    font-size: 30px;
+    color: black;
+    border: 2px solid #23475f;
+    width: 60%;
+    animation: colo 1s;
+    border-radius: 200px;
+}
+.social img{
+    width: 30px;
+}
+@keyframes colo{
+    from{background-color: #0bfad6;}
+    to{background-color: #23475f;}
+}
+.social a:hover{
+    animation-iteration-count: infinite;
+}
+/******************************************صفحة من نحن*************************************************/
+.wediv{
+    margin-right: 40px;
+}
+.we{
+    font-size: 20px;
+}
+.descrip{
+    margin-right: 20px;
+}
+.titl{
+    color: #23475f;
+}
+.whyus{
+    font-size: 35px;
+    margin-right: 70px;
+}
+.whos{
+    text-align: center;
+}
+.allContainerwho{
+    display: inline-block;
+    margin: 30px;
+}
+.expCardContainer{
+    display: inline-block;
+    box-shadow: 0 0 30px black;
+    background-color: rgba(222, 205, 205, 0.368);
+    font-size: 12px;
+}
+.expCard{
+    width: 300px;
+    overflow: hidden;
+    text-align: center; 
+}
+.expImage{
+    width: 268px;
+    height: 200px;
+    background-image: url(exp.png);
+    text-align: center;
+}
+.expCardConetnt{
+    padding: 20px;
+}
+.expCardConetnt h3{
+    margin: 10px 0;
+    color: black;
+    text-align: center;
+}
+.expCardConetnt p{
+    color: black;
+    line-height: 1.5;
+    text-align: center;
+}
+.menCardContainer{
+    display: inline-block;
+    box-shadow: 0 0 30px black;
+    background-color: rgba(222, 205, 205, 0.368);
+    font-size: 12px;
+}
+.menCard{
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+}
+.menImage{
+    width: 268px;
+    height: 200px;
+    background-image: url(men.png);
+    text-align: center;
+}
+.menCardConetnt{
+    padding: 20px;
+}
+.menCardConetnt h3{
+    margin: 10px 0;
+    color: black;
+    text-align: center;
+}
+.menCardConetnt p{
+    color: black;
+    line-height: 1.5;
+    text-align: center;
+}
+.priceCardContainer{
+    display: inline-block;
+    box-shadow: 0 0 30px black;
+    background-color: rgba(222, 205, 205, 0.368);
+    font-size: 12px;
+}
+.priceCard{
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+}
+.priceImage{
+    width: 265px;
+    height: 200px;
+    background-image: url(price.png);
+    text-align: center;
+}
+.priceCardConetnt{
+    padding: 20px;
+}
+.priceCardConetnt h3{
+    margin: 10px 0;
+    color: black;
+    text-align: center;
+}
+.priceCardConetnt p{
+    color: black;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 770px){
+    .btn{
+        font-size: 10px; 
+        margin-left: 0px;
+        padding: 0 9px;
+    }
+    .hello{
+        font-size: 20px;
+    }
+    @keyframes square{
+        from{
+            margin-right: 0%;
+            color: #fff;
+        }
+        to{
+            margin-right: 20%;
+            color: #ffffff7b;
+        }
+    }
+    .divlogo{
+        text-align: center;
+    }
+    .logo{
+        text-align: center;
+        width: 200px;
+    }
+    .line{
+        box-shadow: 0px 0px 3px 2px gray;
+    }
+    .bio{
+        font-size: 18px;
+    }
+    /*.buy{
+        margin-right: 30px;
+        font-size: 30px;
+        width: 180px;  
+    }*/
+    .b{
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    .b img{
+        width: 45px;
+    }
+    .ser{
+        font-size: 25px;
+    }
+    .cons{
+        text-align: center;
+        display: block;
+    }
+    .mor{
+        text-align: center;
+        padding: 0 35px;
+        font-size: 15px;
+        cursor: pointer;
+        color: white;
+        background-color: #23475f;
+    }
+    /*.divmor2{
+        text-align: center;
+        width: 80%;
+    }
+    .mor2{
+        width: 100px;
+        text-align: center;
+        padding: 0 35px;
+        font-size: 23px;
+        cursor: pointer;
+        color: white;
+        background-color: #23475f;
+    }
+    .talk{
+        font-size: 25px;
+        width: 85%;
+    }
+    .logo2{
+        width: 150%;
+    }
+    .poster{
+        display: none;
+    }*/
+    .call{
+        font-size: 23px;
+    }
+    .con{
+        font-size: 10px;
+    }
+    form{
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .email{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .input input{
+        width: 39%;
+        border: 1px solid black;
+        padding: 0px;
+        font-size: 15px;
+    }
+    .text-area textarea{
+        width: 80%;
+        padding: 0px;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+    .sub{
+        text-align: center;
+        font-size: 15px;
+        cursor: pointer;
+        color: white;
+        background-color: #23475f;
+    }
+    .address{
+        font-size: 12px;
+    }
+    /****************************صفحة خدماتنا************************************************/
+    .cons{
+        text-align: center;
+        display: block;
+    }
+    /**********************************صفحة تواصل معنا*************************************/
+    .social{
+        display: block;
+    }
+    .social a{
+        display: block;
+        font-size: 20px;
+        color: black;
+        border: 1px solid #23475f;
+        width: 90%;
+        animation: colo 1s;
+    }
+    /****************************صفحة من نحن************************************************/
+    .wediv{
+        margin-right: 25px;
+    }
+    .we{
+        font-size: 15px;
+    }
+    .descrip{
+        margin-right: 15px;
+    }
+    .whyus{
+        font-size: 25px;
+    }
+    .whos{
+        text-align: center;
+        display: block;
+    }
+    .allContainerwho{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 700px){
+    /******************************************صفحة خدماتنا*********************************************/
+    .cons{
+        text-align: center;
+        display: block;
+    }
+    /**********************************صفحة تواصل معنا*************************************/
+    .social{
+        display: block;
+    }
+    .social a{
+        display: block;
+        font-size: 20px;
+        color: black;
+        border: 1px solid #23475f;
+        width: 90%;
+        animation: colo 1s;
+    }
+    /****************************صفحة من نحن************************************************/
+    .wediv{
+        margin-right: 25px;
+    }
+    .we{
+        font-size: 15px;
+    }
+    .descrip{
+        margin-right: 15px;
+    }
+    .whyus{
+        font-size: 25px;
+    }
+    .whos{
+        text-align: center;
+        display: block;
+    }
+    .allContainerwho{
+        display: block;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (min-width: 710px) and (max-width: 780px){
+    .sleepCardContainer{
+        display: inline-block;
+    }
+    .officeCardContainer{
+        display: inline-block;
+    }
+    .liveCardContainer{
+        display: inline-block;
+    }
+    .carpetsCardContainer{
+        display: inline-block;
+    }
+    /**************************صفحة خدماتنا************************************************/
+    .kitchenCardContainer{
+        display: inline-block;
+    }
+    .bedCardContainer{
+        display: inline-block;
+    }
+    .coffeeCardContainer{
+        display: inline-block;
+    }
+    .tvCardContainer{
+        display: inline-block;
+    }
+    .frgCardContainer{
+        display: inline-block;
+    }
+    .arCardContainer{
+        display: inline-block;
+    }
+    .restoCardContainer{
+        display: inline-block;
+    }
+    .hotelCardContainer{
+        display: inline-block;
+    }
+    /**********************************صفحة تواصل معنا*************************************/
+    .social{
+        display: block;
+    }
+    .social a{
+        display: block;
+        font-size: 20px;
+        color: black;
+        border: 1px solid #23475f;
+        width: 90%;
+        animation: colo 1s;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    /*.poster{
+        width: 300px;
+        height: 300px;
+    }*/
+    /**************************************صفحة خدماتنا**************/
+    .cons{
+        text-align: center;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 850px) and (max-width: 950px){
+    .hello{
+        font-size: 30px;
+    }
+    @keyframes square{
+        from{
+            margin-right: 0%;
+            color: #fff;
+        }
+        to{
+            margin-right: 60%;
+            color: #ffffff7b;
+        }
+    }
+    /*****************************************************************صفحة خدماتنا********************************************/
+    .cons{
+        text-align: center;
+        display: block;
+    }
+    /**********************************صفحة تواصل معنا*************************************/
+    .social{
+        display: block;
+    }
+    .social a{
+        display: block;
+        font-size: 20px;
+        color: black;
+        border: 1px solid #23475f;
+        width: 90%;
+        animation: colo 1s;
+    }
+    /**********************************صفحة من نحن*************************************/
+    .wediv{
+        margin-right: 25px;
+    }
+    .we{
+        font-size: 15px;
+    }
+    .descrip{
+        margin-right: 15px;
+    }
+    .whyus{
+        font-size: 25px;
+    }
+    .whos{
+        text-align: center;
+        display: block;
+    }
+    .allContainerwho{
+        display: block;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1150px){
+    /****************************صفحة خدماتنا*****************/
+    .cons{
+        text-align: center;
+        display: block;
+    }
+    /***********************صفحة من نحن*******************************/
+    .wediv{
+        margin-right: 25px;
+    }
+    .we{
+        font-size: 15px;
+    }
+    .descrip{
+        margin-right: 15px;
+    }
+    .whyus{
+        font-size: 25px;
+    }
+    .whos{
+        text-align: center;
+        display: block;
+    }
+    .allContainerwho{
+        display: block;
+        text-align: center;
+    }
+}
+
